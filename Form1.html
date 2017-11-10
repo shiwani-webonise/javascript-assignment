@@ -1,0 +1,54 @@
+/* Note: Please adjust console view to bottom of the page during inspect as panel position is absolute */
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>JS</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Enter the key-value pairs in the text boxes below:</h2>
+<form class="Fields" >
+                <span>Key: </span><input type="text" id="key" >
+                <span>Value: </span><input type="text" id="value" >
+</form>
+<div class="LocalStorage">
+  <form>
+    <h3>Local Storage Panel</h3>
+     <input id="SetLS" type="button" value="Set Values" onclick="setValues(this.id)">
+     <input id="GetLS" type="button" value="Get All Values" onclick="getValues(this.id)"">
+     <input id="DelLS" type="button" value="Delete Data">
+  </form>
+</div>
+
+<div class="SessionStorage">
+  <form>
+    <h3>Session Storage Panel</h3>
+    <input id="SetSS" type="button" value="Set Values" onclick="setValues(this.id)" >
+    <input id="GetSS" type="button" value="Get All Values" onclick="getValues(this.id)">
+    <input id="DelSS" type="button" value="Delete Data">
+  </form>
+</div>
+
+<div class="retrieve">
+  <form>
+    <table>
+       <tr>
+         <td id="Box1">
+            <h3>Get Item from Local Storage</h3>
+            <span>Enter key to retrieve item: </span><input type="text" id="itemls">
+            <input id="getitemls" type="button" value="Retrieve Item">
+        </td>
+        <td id="Box2">
+            <h3>Get Item from Session Storage</h3>
+            <span>Enter key to retrieve item: </span><input type="text" id="itemss">
+            <input id="getitemss" type="button" value="Retrieve Item">
+        </td>
+      </tr>
+  </table>
+ </form>
+</div>
+</body>
+<script type="text/javascript" src="functions.js"></script>
+</html>
