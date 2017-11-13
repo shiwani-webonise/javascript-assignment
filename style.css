@@ -16,7 +16,7 @@ h2{
 }
 
 
-.LocalStorage, .SessionStorage, .retrieve #Box1, .retrieve #Box2{
+.LocalStorage, .SessionStorage, .retrieve #Box1{
     padding: 20px 20px 20px 20px;
     margin:50px 5px 5px 5px;
     border: 1px solid black;
@@ -25,18 +25,18 @@ h2{
     box-shadow: 10px 10px 36px 0px rgba(110,108,110,1);
 }
 
-.LocalStorage h3, .SessionStorage h3, .retrieve #Box1 h3, .retrieve #Box2 h3 {
+.LocalStorage h3, .SessionStorage h3, .retrieve #Box1 h3{
     font-family: "Impact";
     text-align: center;
 }
 
-.LocalStorage input[type=button],.SessionStorage input[type=button], .retrieve #Box1 input[type=button], .retrieve #Box2 input[type=button]{
+.LocalStorage input[type=button],.SessionStorage input[type=button], .retrieve #Box1 input[type=button]{
     text-align: center;
     font-size: 15px;
 }
 
 .LocalStorage input[type=button]:hover,.SessionStorage input[type=button]:hover, 
-.retrieve #Box1 input[type=button]:hover, .retrieve #Box2 input[type=button]:hover{
+.retrieve #Box1 input[type=button]:hover{
     color:blue;
     box-shadow: 10px 10px 36px 0px rgba(110,108,110,1);
 }
@@ -54,12 +54,8 @@ h2{
 .retrieve #Box1{
     position: absolute;
     top:250px;
-    left:10px;
+    left:160px;
 }
 
-.retrieve #Box2{
-    position: absolute;
-    top:250px;
-    left:550px;
-}
+
 
