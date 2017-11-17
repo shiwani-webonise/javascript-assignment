@@ -9,6 +9,9 @@ var setValues = function() {
 	alert("Key-value pair added!");
 }
 
+var setInLocalStorage=setValues.bind(local);
+var setInSessionStorage=setValues.bind(session);
+
 /*Clear Local/Session storage */
 var clearStorage = function() {
 	var keyval = document.getElementById('key').value;
@@ -17,6 +20,8 @@ var clearStorage = function() {
 	alert("Storage cleared!");
 }
 
+var clearLocalStorage=clearStorage.bind(local);
+var clearSessionStorage=clearStorage.bind(session);
 
 /* Retrieve all key-value pairs from Local/Session Storage*/
 var getValues = function() { 
@@ -31,6 +36,9 @@ var getValues = function() {
 		 }
 }
 
+var getDataFromLocal=getValues.bind(local);
+var getDataFromSession=getValues.bind(session);
+
 /*Event handler to retrieve item from Local/Session Storage */
 var getSingleItem = function() {
     var item_storage = document.getElementById('getitem').value;
@@ -40,4 +48,7 @@ var getSingleItem = function() {
     else
         console.log(item_storage + " -> " + item_value);
 }
+
+var getItemFromLocal=getSingleItem.bind(local);
+var getItemFromSession=getSingleItem.bind(session);
 
