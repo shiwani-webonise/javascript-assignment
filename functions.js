@@ -13,7 +13,7 @@ var setValues = function() {
 var clearStorage = function() {
 	var keyval = document.getElementById('key').value;
      	var value = document.getElementById('value').value;
-	this.storage.clear;
+	this.storage.clear();
 	alert("Storage cleared!");
 }
 
