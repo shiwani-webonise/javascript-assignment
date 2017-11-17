@@ -14,18 +14,18 @@
 <div class="LocalStorage">
   <form>
     <h3>Local Storage Panel</h3>
-     <input id="SetLS" type="button" value="Set Values" onclick="setValues.call(local)">
-     <input id="GetLS" type="button" value="Get All Values" onclick="getValues.call(local)">
-     <input id="DelLS" type="button" value="Delete Data" onclick="clearStorage.call(local)">
+     <input id="SetLS" type="button" value="Set Values" onclick="setInLocalStorage()">
+     <input id="GetLS" type="button" value="Get All Values" onclick="getDataFromLocal()">
+     <input id="DelLS" type="button" value="Delete Data" onclick="clearLocalStorage()">
   </form>
 </div>
 
 <div class="SessionStorage">
   <form>
     <h3>Session Storage Panel</h3>
-    <input id="SetSS" type="button" value="Set Values" onclick="setValues.call(session)" >
-    <input id="GetSS" type="button" value="Get All Values" onclick="getValues.call(session)">
-    <input id="DelSS" type="button" value="Delete Data" onclick="clearStorage.call(session)">
+    <input id="SetSS" type="button" value="Set Values" onclick="setInSessionStorage()" >
+    <input id="GetSS" type="button" value="Get All Values" onclick="getDataFromLocal()">
+    <input id="DelSS" type="button" value="Delete Data" onclick="clearSessionStorage()">
   </form>
 </div>
 
@@ -36,8 +36,8 @@
          <td id="Box1">
             <h3>Get Item from Local/Session Storage</h3>
             <span>Enter key to retrieve item: </span><input type="text" id="getitem">
-            <input id="getitem" type="button" value="Retrieve Item from Local Storage" onclick="getSingleItem.call(local)">
-	     <input id="getitem" type="button" value="Retrieve Item from Session Storage" onclick="getSingleItem.call(session)">
+            <input id="getitem" type="button" value="Retrieve Item from Local Storage" onclick="getItemFromLocal()">
+	     <input id="getitem" type="button" value="Retrieve Item from Session Storage" onclick="getItemFromSession()">
         </td>
       </tr>
   </table>
